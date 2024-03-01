@@ -6,14 +6,8 @@ public class Main {
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
         int N = Integer.parseInt(br.readLine());
-        int count = 1;
+        bw.write(String.valueOf((int) Math.sqrt(N)));
         
-        while (true) {
-            if (Math.pow(count, 2) <= N && N < Math.pow(count + 1, 2)) break;
-            else count++;
-        }
-
-        bw.write(String.valueOf(count));
         bw.close();
     }
 }
